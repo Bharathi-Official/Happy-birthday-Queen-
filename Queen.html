@@ -1,0 +1,1816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.4/dist/dotlottie-wc.js" type="module"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Queen Meena 👑</title>
+
+<!-- Google Fonts -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:linear-gradient(135deg,#4a148c,#6a1b9a,#8e24aa,#ba68c8);
+
+overflow:hidden;
+
+height:100vh;
+
+color:white;
+
+}
+
+@keyframes peekBear{
+
+0%{
+left:-150px;
+}
+
+40%{
+left:-20px;
+}
+
+60%{
+left:-20px;
+}
+
+100%{
+left:-150px;
+}
+
+}
+
+
+
+@keyframes blink{
+
+0%,90%,100%{
+
+transform:scaleY(1);
+
+}
+
+95%{
+
+transform:scaleY(.1);
+
+}
+
+}
+.animationBox{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+.centerScene{
+
+position:absolute;
+
+top:50%;
+
+left:50%;
+
+transform:translate(-50%,-50%);
+
+width:100%;
+
+height:100%;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+
+}
+#wishText{
+
+white-space:pre-line;
+
+animation:fade 1s;
+
+}
+
+@keyframes centerFade{
+
+from{
+opacity:0;
+transform:translate(-50%,-45%);
+}
+
+to{
+opacity:1;
+transform:translate(-50%,-50%);
+}
+
+}
+
+.centerScene.fade{
+animation:centerFade 1s ease;
+}
+.centerScene dotlottie-wc{
+
+display:block;
+
+margin:0 auto;
+
+}
+/* Background */
+
+.background{
+
+position:fixed;
+
+width:100%;
+
+height:100%;
+
+background:url("assets/images/castle.jpg") center center/cover;
+
+filter:brightness(.35);
+
+z-index:-3;
+
+}
+
+.bearPeek{
+
+font-size:90px;
+
+animation:peek 2s infinite;
+
+}
+
+
+@keyframes peek{
+
+0%{
+transform:translateX(-60px);
+}
+
+50%{
+transform:translateX(20px);
+}
+
+100%{
+transform:translateX(-60px);
+}
+
+}
+
+
+
+.walkingBear{
+
+font-size:100px;
+
+animation:walk 3s infinite;
+
+}
+
+
+@keyframes walk{
+
+0%{
+transform:translateX(-150px);
+}
+
+100%{
+transform:translateX(150px);
+}
+
+}
+
+/* Overlay */
+
+.overlay{
+
+position:fixed;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,.25);
+
+z-index:-2;
+
+}
+
+.family{
+
+font-size:60px;
+
+margin:40px;
+
+animation:bounce 2s infinite;
+
+}
+
+
+@keyframes bounce{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-20px);
+}
+
+}
+
+/* Floating Sparkles */
+@keyframes fall{
+
+0%{
+transform:translateY(-50px) rotate(0deg);
+opacity:1;
+}
+
+100%{
+transform:translateY(110vh) rotate(720deg);
+opacity:0;
+}
+
+}
+.sparkle{
+
+position:absolute;
+
+width:5px;
+
+height:5px;
+
+background:white;
+
+border-radius:50%;
+
+animation:float 8s linear infinite;
+
+opacity:.8;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(100vh);
+
+opacity:0;
+
+}
+
+30%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-120px);
+
+opacity:0;
+
+}
+
+}
+.royalLetter{
+
+background:linear-gradient(
+#fff8dc,
+#f5deb3
+);
+
+color:#5d4037;
+
+padding:35px;
+
+border-radius:20px;
+
+max-width:700px;
+
+max-height:80vh;
+
+overflow-y:auto;
+
+box-shadow:
+0 0 30px gold;
+
+border:5px solid #d4af37;
+
+font-family:'Cinzel',serif;
+
+}
+
+
+.royalLetter p{
+
+font-family:'Poppins',sans-serif;
+
+font-size:18px;
+
+line-height:35px;
+
+}
+
+/* Welcome */
+
+#welcome{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+h1{
+
+font-family:'Cinzel',serif;
+
+font-size:52px;
+
+margin-bottom:15px;
+
+text-shadow:0 0 20px gold;
+
+}
+
+h2{
+
+font-weight:300;
+
+margin-bottom:30px;
+
+}
+
+.startBtn{
+
+padding:18px 45px;
+
+font-size:20px;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+background:linear-gradient(45deg,#ffca28,#ffd54f);
+
+color:#4a148c;
+
+font-weight:bold;
+
+transition:.4s;
+
+box-shadow:0 0 25px gold;
+
+}
+
+.startBtn:hover{
+
+transform:scale(1.08);
+
+}
+
+.fade{
+
+animation:fade 2s ease;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.music{
+
+position:fixed;
+
+top:20px;
+
+right:20px;
+
+font-size:30px;
+
+cursor:pointer;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="overlay"></div>
+
+<div id="sparkles"></div>
+
+<div class="music" onclick="toggleMusic()">🎵</div>
+
+<section id="welcome" class="fade">
+
+<h1>👑 Happy Birthday</h1>
+
+<h2>Our Beautiful Queen Meena 🌸</h2>
+
+<button class="startBtn" onclick="startAdventure()">
+
+Start Royal Journey ✨
+
+</button>
+
+</section>
+
+<audio id="bgMusic" loop>
+
+<source src="assets/music/bg.mp3" type="audio/mpeg">
+
+</audio>
+
+<script>
+
+/* Sparkles */
+
+for(let i=0;i<80;i++){
+
+let s=document.createElement("div");
+
+s.className="sparkle";
+
+s.style.left=Math.random()*100+"vw";
+
+s.style.animationDuration=(5+Math.random()*8)+"s";
+
+s.style.animationDelay=Math.random()*5+"s";
+
+document.getElementById("sparkles").appendChild(s);
+
+}
+
+/* Music */
+
+const music=document.getElementById("bgMusic");
+
+let playing=false;
+
+function toggleMusic(){
+
+if(!playing){
+
+music.play();
+
+playing=true;
+
+}
+
+else{
+
+music.pause();
+
+playing=false;
+
+}
+
+}
+
+/* Start */
+
+function startAdventure(){
+
+document.getElementById("welcome").innerHTML=`
+
+<h1 class="fade">✨ Welcome Queen ✨</h1>
+
+<h2 class="fade">
+
+Tonight...
+
+A magical kingdom has prepared
+
+a tiny surprise just for you.
+
+</h2>
+
+<br>
+
+<button class="startBtn"
+
+onclick="nextPage()">
+
+Continue ❤️
+
+</button>
+
+`;
+
+}
+
+function nextPage(){
+
+document.getElementById("welcome").innerHTML=`
+
+<div style="width:100%;max-width:700px;margin:auto;animation:fade 1s;">
+
+<h3 style="
+font-family:Cinzel;
+font-size:32px;
+margin-bottom:25px;
+text-shadow:0 0 10px gold;
+">
+
+Question 1 / 5
+
+</h3>
+
+<div style="
+height:10px;
+background:#ffffff40;
+border-radius:20px;
+overflow:hidden;
+margin-bottom:35px;
+">
+
+<div style="
+width:20%;
+height:100%;
+background:gold;
+"></div>
+
+</div>
+
+<h2 style="
+margin-bottom:40px;
+line-height:45px;
+">
+
+🌸
+
+Does Uncle take you on a trip
+at least once every
+1–2 months?
+
+</h2>
+
+<button class="startBtn"
+onclick="answerYes()">
+
+Yes ❤️
+
+</button>
+
+<br><br>
+
+<button class="startBtn"
+style="background:#ffffff;color:#4a148c;"
+onclick="answerNo()">
+
+No 🙂
+
+</button>
+
+<div id="response"
+style="
+margin-top:40px;
+font-size:22px;
+line-height:40px;
+font-weight:500;
+"></div>
+
+</div>
+
+`;
+
+}
+function answerYes(){
+
+document.getElementById("response").innerHTML=`
+
+🥳
+
+Wowww...
+
+That's wonderful! ❤️
+
+Beautiful memories are made
+when families travel together.
+
+Keep creating more happy memories.
+
+<br><br>
+
+<button class="startBtn"
+onclick="question2()">
+
+Next ➜
+
+</button>
+
+`;
+
+}
+function answerNo(){
+
+document.getElementById("response").innerHTML=`
+
+😊
+
+That's completely okay.
+
+Maybe after seeing this surprise,
+
+Uncle will plan
+a beautiful trip for you.
+
+✈️🌸
+
+<br><br>
+
+<button class="startBtn"
+onclick="question2()">
+
+Next ➜
+
+</button>
+
+`;
+
+}
+
+function question2(){
+
+document.getElementById("welcome").innerHTML=`
+
+<div style="width:100%;max-width:700px;margin:auto;animation:fade 1s;">
+
+<h3 style="
+font-family:Cinzel;
+font-size:32px;
+margin-bottom:25px;
+text-shadow:0 0 10px gold;
+">
+
+Question 2 / 5
+
+</h3>
+
+<div style="
+height:10px;
+background:#ffffff40;
+border-radius:20px;
+overflow:hidden;
+margin-bottom:35px;
+">
+
+<div style="
+width:40%;
+height:100%;
+background:gold;
+"></div>
+
+</div>
+
+<h2 style="
+margin-bottom:40px;
+line-height:45px;
+">
+
+💜
+
+Does Uncle spend quality
+time with you even on
+busy days?
+
+</h2>
+
+<button class="startBtn"
+onclick="q2yes()">
+
+Yes ❤️
+
+</button>
+
+<br><br>
+
+<button class="startBtn"
+style="background:white;color:#4a148c;"
+onclick="q2no()">
+
+No 😊
+
+</button>
+
+<div id="response"
+style="
+margin-top:40px;
+font-size:22px;
+line-height:38px;
+"></div>
+
+</div>
+
+`;
+
+}
+function q2yes(){
+
+document.getElementById("response").innerHTML=`
+
+❤️
+
+That's really beautiful.
+
+Time is the most valuable
+gift we can give someone.
+
+Keep enjoying every
+little moment together.
+
+<br><br>
+
+<button class="startBtn"
+
+onclick="question3()">
+
+Next ➜
+
+</button>
+
+`;
+
+}
+function q2no(){
+
+document.getElementById("response").innerHTML=`
+
+🌸
+
+Busy days happen.
+
+Maybe after today,
+
+Uncle will reserve
+a special day
+just for you.
+
+😊❤️
+
+<br><br>
+
+<button class="startBtn"
+
+onclick="question3()">
+
+Next ➜
+
+</button>
+
+`;
+
+}
+function question3(){
+
+document.getElementById("welcome").innerHTML=`
+
+<div style="width:100%;max-width:700px;margin:auto;animation:fade 1s;">
+
+<h3 style="
+font-family:Cinzel;
+font-size:32px;
+margin-bottom:25px;
+text-shadow:0 0 10px gold;
+">
+
+Question 3 / 5
+
+</h3>
+
+<div style="
+height:10px;
+background:#ffffff40;
+border-radius:20px;
+overflow:hidden;
+margin-bottom:35px;
+">
+
+<div style="
+width:60%;
+height:100%;
+background:gold;
+"></div>
+
+</div>
+
+<h2 style="
+margin-bottom:40px;
+line-height:45px;
+">
+
+🌷
+
+Has your daughter ever
+done something special
+just to make you smile?
+
+</h2>
+
+<button class="startBtn"
+onclick="q3yes()">
+
+Yes ❤️
+
+</button>
+
+<br><br>
+
+<button class="startBtn"
+style="background:white;color:#4a148c;"
+onclick="q3no()">
+
+No 😊
+
+</button>
+
+<div id="response"
+style="
+margin-top:40px;
+font-size:22px;
+line-height:38px;
+"></div>
+
+</div>
+
+`;
+
+}
+function q3yes(){
+
+document.getElementById("response").innerHTML=`
+
+🥹❤️
+
+A daughter's biggest happiness
+
+is seeing her mother's smile.
+
+She must love you so much.
+
+<br><br>
+
+<button class="startBtn"
+
+onclick="question4()">
+
+Next ➜
+
+</button>
+
+`;
+
+}
+function q3no(){
+
+document.getElementById("response").innerHTML=`
+
+😊
+
+Maybe...
+
+today is going to be
+
+one of those special days.
+
+❤️🌸
+
+<br><br>
+
+<button class="startBtn"
+
+onclick="question4()">
+
+Next ➜
+
+</button>
+
+`;
+
+}
+function question4(){
+
+document.getElementById("welcome").innerHTML=`
+
+<div style="width:100%;max-width:700px;margin:auto;animation:fade 1s;">
+
+<h3 style="font-family:Cinzel;font-size:32px;text-shadow:0 0 10px gold;">
+Question 4 / 6
+</h3>
+
+<div style="height:10px;background:#ffffff40;border-radius:20px;margin:25px 0;">
+<div style="width:66%;height:100%;background:gold;"></div>
+</div>
+
+
+<h2 style="line-height:45px;margin-bottom:40px;">
+🍽️ Does your family often take you out for dinner?
+</h2>
+
+
+<button class="startBtn" onclick="q4yes()">Yes ❤️</button>
+
+<br><br>
+
+<button class="startBtn" style="background:white;color:#4a148c;"
+onclick="q4no()">No 😊</button>
+
+
+<div id="response" style="margin-top:35px;font-size:22px;"></div>
+
+</div>
+`;
+
+}
+
+
+function q4yes(){
+
+document.getElementById("response").innerHTML=`
+Delicious food tastes even better with family. 🍽️❤️
+<br><br>
+<button class="startBtn" onclick="question5()">Continue ✨</button>
+`;
+
+}
+
+
+function q4no(){
+
+document.getElementById("response").innerHTML=`
+Family dinner idea unlocked! 🍕🌸
+<br><br>
+<button class="startBtn" onclick="question5()">Continue ✨</button>
+`;
+
+}
+
+
+
+function question5(){
+
+document.getElementById("welcome").innerHTML=`
+
+<div style="width:100%;max-width:700px;margin:auto;animation:fade 1s;">
+
+<h3 style="font-family:Cinzel;font-size:32px;text-shadow:0 0 gold;">
+Question 5 / 6
+</h3>
+
+
+<div style="height:10px;background:#ffffff40;border-radius:20px;margin:25px 0;">
+<div style="width:83%;height:100%;background:gold;"></div>
+</div>
+
+
+<h2 style="line-height:45px;margin-bottom:40px;">
+🌸 Has Hari ever told you "I love you"?
+</h2>
+
+
+<button class="startBtn" onclick="q5yes()">Yes ❤️</button>
+
+<br><br>
+
+<button class="startBtn" style="background:white;color:#4a148c;"
+onclick="q5no()">No 😊</button>
+
+
+<div id="response" style="margin-top:35px;font-size:22px;"></div>
+
+</div>
+`;
+
+}
+
+
+function q5yes(){
+
+document.getElementById("response").innerHTML=`
+That's precious. ❤️
+<br><br>
+<button class="startBtn" onclick="question6()">Continue ✨</button>
+`;
+
+}
+
+
+function q5no(){
+
+document.getElementById("response").innerHTML=`
+Sometimes children show love in quiet ways. His heart is definitely full of love for you. 🌸
+<br><br>
+<button class="startBtn" onclick="question6()">Continue ✨</button>
+`;
+
+}
+
+
+
+function question6(){
+
+document.getElementById("welcome").innerHTML=`
+
+<div style="width:100%;max-width:700px;margin:auto;animation:fade 1s;">
+
+<h3 style="font-family:Cinzel;font-size:32px;text-shadow:0 0 10px gold;">
+Question 6 / 6
+</h3>
+
+
+<div style="height:10px;background:#ffffff40;border-radius:20px;margin:25px 0;">
+<div style="width:100%;height:100%;background:gold;"></div>
+</div>
+
+
+<h2 style="line-height:45px;margin-bottom:40px;">
+💜 Do you feel loved by your family?
+</h2>
+
+
+<button class="startBtn" onclick="q6yes()">Yes ❤️</button>
+
+<br><br>
+
+<button class="startBtn" style="background:white;color:#4a148c;"
+onclick="q6no()">No 😊</button>
+
+
+<div id="response" style="margin-top:35px;font-size:22px;"></div>
+
+</div>
+`;
+
+}
+
+
+function q6yes(){
+
+finishQuiz("That makes today even more special. ❤️");
+
+}
+
+
+function q6no(){
+
+finishQuiz("Sometimes love isn't always spoken. But today... you'll see just how much you're loved. 💜");
+
+}
+
+
+
+function finishQuiz(msg){
+
+document.getElementById("welcome").innerHTML=`
+
+<div class="fade">
+
+<h2>${msg}</h2>
+
+<br>
+
+<h1>🎉 Final Family Mission 👑</h1>
+
+<p style="font-size:22px;line-height:35px;">
+Now please show your mobile to everyone in your family. 👨‍👩‍👧‍👦❤️
+</p>
+
+<br>
+
+<button class="startBtn" onclick="familyPage()">
+
+Everyone is here ❤️
+
+</button>
+
+</div>
+
+`;
+
+}
+
+
+
+function familyPage(){
+
+document.getElementById("welcome").innerHTML=`
+
+<div class="fade">
+
+<h1>🏰 Royal Family Gathering 👑</h1>
+
+<h2 style="
+line-height:40px;
+">
+
+Everyone in the kingdom has gathered
+to celebrate our beautiful Queen Meena. 🌸
+
+</h2>
+
+
+<div class="family">
+
+👨‍👩‍👧‍👦 ✨ ❤️ ✨ 👑
+
+</div>
+
+
+<button class="startBtn"
+onclick="royalWish()">
+
+Start Family Wishes 🎉
+
+</button>
+
+
+</div>
+
+`;
+
+}
+
+
+
+function royalWish(){
+
+document.getElementById("welcome").innerHTML=`
+
+<div class="fade">
+
+<h1>📜 Royal Announcement 👑</h1>
+
+
+<h2 style="
+line-height:45px;
+">
+
+Today is Queen Meena's Birthday! 🎂👑
+
+<br><br>
+
+Everyone in the kingdom,
+please wish our Queen a very Happy Birthday
+and tell her how much you love her.
+
+<br><br>
+
+❤️🎉
+
+</h2>
+
+
+<button class="startBtn"
+onclick="afterFamilyWish()">
+
+Everyone Wished Her 🎉🏰
+
+</button>
+
+
+</div>
+
+`;
+
+}
+
+
+
+function afterFamilyWish(){
+
+document.getElementById("welcome").innerHTML=`
+
+<div class="fade">
+
+<h1>🎉 Wow! 👑</h1>
+
+
+<h2 style="
+line-height:45px;
+">
+
+Everyone in the kingdom has wished our Queen!
+
+<br><br>
+
+Thank you, dear family,
+for filling today with love. ❤️
+
+<br><br>
+
+Suddenly...
+
+</h2>
+
+
+<button class="startBtn"
+onclick="babyBearPage()">
+
+Continue ✨
+
+</button>
+
+
+</div>
+
+`;
+
+}
+
+function babyBearPage(){
+
+document.getElementById("welcome").innerHTML=`
+
+<div class="fade centerScene">
+
+<h1>🎉 Suddenly...</h1>
+
+
+<dotlottie-wc 
+src="https://lottie.host/e3b9c24b-77b3-4324-b1ee-6af0c09cfac2/mj3B8gGhnC.lottie"
+style="width:280px;height:280px;display:block;margin:auto;"
+autoplay
+loop>
+</dotlottie-wc>
+
+
+<h2 style="line-height:45px;">
+
+"Um... Excuse me... 🥺"
+
+<br>
+
+"Can... can I come in too?"
+
+</h2>
+
+
+<button class="startBtn"
+onclick="bearYes()">
+
+🩷 Yes, come in!
+
+</button>
+
+
+<br><br>
+
+
+<button class="startBtn"
+style="background:white;color:#4a148c;"
+onclick="bearWait()">
+
+🤎 Wait... let me ask Mommy first!
+
+</button>
+
+
+</div>
+
+`;
+
+}
+
+
+function bearYes(){
+
+document.getElementById("welcome").innerHTML=`
+
+<div class="fade centerScene">
+
+
+<!-- Baby Bear -->
+
+
+
+<!-- Gift Animation -->
+
+<dotlottie-wc 
+src="https://lottie.host/0ea74c3f-9305-40cf-949f-608f97dace43/eXZRKICxRk.lottie"
+style="width:280px;height:280px;display:block;margin:auto;"
+autoplay
+loop>
+</dotlottie-wc>
+
+
+
+<h2 style="line-height:45px;">
+
+"Really...? 🥹"
+
+<br><br>
+
+"But...Shouldn't You ask Daddy too?"
+
+</h2>
+
+
+<button class="startBtn"
+onclick="bearEnter()">
+
+💙 Yes! Daddy said you can come too.
+
+</button>
+
+
+</div>
+
+`;
+
+}
+function bearWait(){
+
+document.getElementById("welcome").innerHTML=`
+
+<div class="fade centerScene">
+
+<dotlottie-wc 
+src="https://lottie.host/e3b9c24b-77b3-4324-b1ee-6af0c09cfac2/mj3B8gGhnC.lottie"
+style="width:280px;height:280px;display:block;margin:auto;"
+autoplay
+loop>
+</dotlottie-wc>
+
+
+<h2 style="line-height:45px;">
+
+"Okay... I'll wait here patiently 🥺"
+
+<br><br>
+
+"Please ask Mommy..."
+
+</h2>
+
+
+<button class="startBtn"
+onclick="bearYes()">
+
+Come Back ❤️
+
+</button>
+
+
+</div>
+
+`;
+
+}
+
+function bearEnter(){
+
+document.getElementById("welcome").innerHTML=`
+
+<div class="fade centerScene">
+
+
+<div class="animationBox">
+
+<dotlottie-wc 
+src="https://lottie.host/e3b9c24b-77b3-4324-b1ee-6af0c09cfac2/mj3B8gGhnC.lottie"
+style="width:280px;height:280px"
+autoplay
+loop>
+</dotlottie-wc>
+
+
+</div>
+
+
+<h1>✨ Welcome Baby Bear ✨</h1>
+
+
+<h2 style="line-height:45px;">
+
+"Yayyy! Thank you! 🥹❤️"
+
+<br><br>
+
+"Now I'm officially allowed to come."
+
+<br><br>
+
+"Because... I'm family too. 🫶"
+
+</h2>
+
+
+<button class="startBtn"
+onclick="bearWish()">
+
+Birthday Wish 🐻❤️
+
+</button>
+
+
+</div>
+
+`;
+
+}
+function bearWish(){
+
+document.getElementById("welcome").innerHTML=`
+
+<div class="fade" style="
+width:100%;
+height:100vh;
+overflow-y:auto;
+padding:20px;
+display:flex;
+justify-content:center;
+align-items:flex-start;
+">
+
+<div style="
+width:100%;
+max-width:750px;
+margin:auto;
+text-align:center;
+padding-bottom:40px;
+">
+
+<dotlottie-wc
+src="https://lottie.host/e3b9c24b-77b3-4324-b1ee-6af0c09cfac2/mj3B8gGhnC.lottie"
+style="width:170px;height:170px;display:block;margin:0 auto;"
+autoplay
+loop>
+</dotlottie-wc>
+
+<h1>🐻 A Little Birthday Wish 👑</h1>
+
+<div id="wishText"
+style="
+font-size:20px;
+line-height:36px;
+white-space:pre-line;
+margin:20px auto;
+max-width:700px;
+">
+</div>
+
+<<button
+id="nextBtn"
+class="startBtn"
+style="display:none;margin-top:30px;"
+onclick="showFinalPopup()">
+
+✨ Continue
+
+</button>
+
+</div>
+
+</div>
+
+`;
+
+let text = `
+
+Happy Birthday, Queen Meena! 👑🌸
+
+Hi Queen... I'm the little Baby Bear. 🐻
+
+Princess has told me so many wonderful things about you and the King. ❤️
+
+Even though we haven't spent much time together, I feel like I already know you through her stories.
+
+She always speaks about you with so much love, respect, and happiness.
+
+That's why I couldn't miss the chance to come and wish you today.
+
+May your heart always be filled with peace, your home with laughter, and your days with countless beautiful memories.
+
+Keep smiling, Queen...
+You truly are the heart of this wonderful kingdom. 👑💜
+
+Happy Birthday! 🎂
+
+With lots of tiny hugs and endless love,
+
+🐻 By Bharathi... ❤️
+
+`;
+
+let index = 0;
+
+function typing(){
+
+if(index < text.length){
+
+document.getElementById("wishText").innerHTML += text.charAt(index);
+
+index++;
+
+setTimeout(typing,30);
+
+}else{
+
+document.getElementById("nextBtn").style.display="inline-block";
+
+}
+
+}
+
+typing();
+
+}
+function typeWriter(){
+
+const text=`Happy Birthday, Queen Meena! 👑🌸
+
+Today isn't just your birthday...
+It's a celebration of your kindness, your strength, your love, and the beautiful family you have created.
+
+Thank you for filling your home with warmth, care, and happiness.
+
+May every sunrise bring peace, every smile bring joy, and every year bring beautiful memories with the people who love you the most.
+
+Stay healthy. Stay happy. Keep smiling.
+
+You truly are the Queen of this wonderful kingdom. 👑💜
+
+With lots of hugs, tiny paws, and endless birthday wishes...
+🐻❤️`;
+
+let i=0;
+
+function typing(){
+
+if(i<text.length){
+
+document.getElementById("wishText").innerHTML+=text.charAt(i);
+
+i++;
+
+setTimeout(typing,30);
+
+}else{
+
+document.getElementById("nextBtn").style.display="inline-block";
+
+}
+
+}
+
+typing();
+
+}
+
+function meetThemPage(){
+
+document.getElementById("welcome").innerHTML=`
+
+<div class="fade centerScene">
+
+<h1>💜 Someone is Waiting...</h1>
+
+<h2 style="line-height:45px;">
+
+There is one more special person
+waiting to wish you.
+
+🥹❤️
+
+</h2>
+
+<button class="startBtn" onclick="showFinalPopup()">
+
+🩷 Meet Them
+
+</button>
+
+</div>
+
+`;
+
+}
+function endingPage(){
+
+document.getElementById("welcome").innerHTML=`
+
+<div class="fade centerScene">
+
+<h1>🎉 Happy Birthday, Queen Meena 👑</h1>
+
+<img
+src="final-surprise.jpg"
+style="
+width:90%;
+max-width:750px;
+border-radius:25px;
+box-shadow:0 0 35px gold;
+margin:20px 0;
+">
+
+<h2 style="line-height:40px;">
+
+May this year bring you
+good health,
+endless happiness,
+and countless beautiful memories
+with your lovely family. 💜
+
+</h2>
+
+<div style="font-size:55px;margin:20px 0;">
+🎊 🎆 🌸 🎉 ✨ 💜
+</div>
+
+<h3 style="
+font-family:Cinzel;
+margin-top:15px;
+color:#FFD700;
+">
+
+Made with ❤️ by Bharathi
+
+</h3>
+
+</div>
+
+`;
+
+createConfetti();
+
+}
+function createConfetti(){
+
+for(let i=0;i<120;i++){
+
+let c=document.createElement("div");
+
+c.innerHTML=["🎊","🌸","✨","💜","🎉"][Math.floor(Math.random()*5)];
+
+c.style.position="fixed";
+c.style.left=Math.random()*100+"vw";
+c.style.top="-50px";
+c.style.fontSize=(18+Math.random()*18)+"px";
+c.style.animation="fall "+(4+Math.random()*4)+"s linear forwards";
+c.style.zIndex="9999";
+
+document.body.appendChild(c);
+
+setTimeout(()=>c.remove(),8000);
+
+}
+
+}
+function showFinalPopup(){
+
+document.getElementById("welcome").innerHTML=`
+
+<div class="fade centerScene">
+
+<div style="
+max-width:650px;
+background:rgba(255,255,255,.15);
+padding:35px;
+border-radius:25px;
+box-shadow:0 0 30px gold;
+">
+
+<h1>💌 One More Wish...</h1>
+
+<h2 style="line-height:42px;margin-top:20px;">
+
+Another person wants to wish you... 💜
+
+<br><br>
+
+That person has been waiting for a long time...
+
+<br><br>
+
+In fact... for many years. 🥹
+
+<br><br>
+
+So... kochikama avangalaiyum pathutu vaanga... 🙌🏼
+
+</h2>
+
+<br>
+
+<button class="startBtn" onclick="meetThem()">
+
+🌸 Meet Them
+
+</button>
+
+</div>
+
+</div>
+
+`;
+
+}
+
+
+function meetThem(){
+
+// Open image in full screen
+
+let img = document.createElement("img");
+
+img.src="final-surprise.jpg";
+
+img.style.position="fixed";
+img.style.top="0";
+img.style.left="0";
+img.style.width="100vw";
+img.style.height="100vh";
+img.style.objectFit="contain";
+img.style.background="black";
+img.style.zIndex="9999";
+img.style.cursor="pointer";
+
+document.body.appendChild(img);
+
+
+// Click image to return to ending page
+
+img.onclick=function(){
+
+img.remove();
+
+endingPage();
+
+};
+
+}
+</script>
+
+</body>
+
+</html>
